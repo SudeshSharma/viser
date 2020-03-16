@@ -3,11 +3,11 @@ import { Tabs, Tab, Typography } from '@material-ui/core';
 
 
 import Registration from './Registration';
-import Home from './Home'
-import Learning from './Learning'
-import Blog from './Blog';
-import About from './About';
-import Pricing from './Pricing';
+import Enquiry from './Enquiry'
+// import Learning from './Learning'
+// import Blog from './Blog';
+// import About from './About';
+// import Pricing from './Pricing';
 
 // const logo = require('./Images/logo.ico')
 interface TabContainerProps{
@@ -36,21 +36,23 @@ function NavBar(){
             {/* <AppBar color="default">   */}
             {/* <img src={logo} alt="logo" height="10%" width="10%"/> */}
             <Tabs  value={value} onChange={handleChange}  variant="scrollable" scrollButtons="on" >
-              <Tab disableRipple label="Home" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/>
+              {/* <Tab disableRipple label="Home" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/>
               <Tab disableRipple label="Learning" style={{fontFamily:"Times New Roman",fontSize: '20px'}} />
               <Tab disableRipple label="Blog" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/>
               <Tab disableRipple label="About" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/>
-              <Tab disableRipple label="Pricing" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/>
+              <Tab disableRipple label="Pricing" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/> */}
               <Tab disableRipple label="Register" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/>
+              <Tab disableRipple label="Enquiry" style={{fontFamily:"Times New Roman",fontSize: '20px'}}/>
             </Tabs>
             {/* </AppBar>  */}
-
+{/* 
             {value===0 && <TabContainer><Home/></TabContainer>}
             {value===1 && <TabContainer><Learning/></TabContainer>}
             {value===2 && <TabContainer><Blog/></TabContainer>}
             {value===3 && <TabContainer><About/></TabContainer>}
-            {value===4 &&<TabContainer><Pricing/></TabContainer>}
-            {value===5 && <TabContainer><Registration/></TabContainer>}
+            {value===4 &&<TabContainer><Pricing/></TabContainer>} */}
+            {value===0 && <TabContainer><Registration/></TabContainer>}
+            {value===1 && <TabContainer><Enquiry/></TabContainer>}
             {/* </SwipeableViews> */}
         </div>
 

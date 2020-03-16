@@ -15,14 +15,19 @@ export const RegiStyle = (theme: Theme) =>
             width:"20%",
             height:"100%",
             marginTop:"20%",
-            marginLeft:"20%",
+            marginLeft:"5%",
+            paddingLeft:"5%",
             fontFamily:"Georgia",
             color:"#ccffff"
 
         },
+        menu:{
+          width: 200
+        },
         textInput:{
             fontFamily:"Georgia",
             color:"#ccffff",
+            marginLeft:'5',
             borderBlockColor:"#ccffff",
             '& label.Mui-focused': {
                 color: 'yellow',
